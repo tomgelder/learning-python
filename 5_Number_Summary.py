@@ -49,6 +49,7 @@ def set_Q1(scores):
 		return (s[0]+s[1]) * 0.5
 	else:
 		return s[1]
+
 def set_Q3(scores):
 	s = sorted(scores)
 	q3 = []
@@ -64,7 +65,7 @@ def set_Q3(scores):
 		for i in range(len(s)/2+1, len(s)):
 			q3.append(s[i])
 		return set_median(q3)
-def set_IQR(sc
+
 def five_number_summary(set):
 	print "===Five Number Summary==="
 	print "Min:", set_min(set)
